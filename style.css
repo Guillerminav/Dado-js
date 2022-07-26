@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* gris #222831
+gris claro #393E46
+amarillo #FFD369*/
+
+body{ 
+    background-color: #222831;
+}
+
+.container, .container2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dado__container, .dado__container2 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD369;
+    border-radius: 20px 20px 0 0;
+}
+
+.visor {
+    border: solid 1px purple;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #FFD369;
+    background-color: #222831;
+    border-radius: 10px;
+}
+
+
+button {
+    width: 200px;
+    height: 80px;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #FFD369;
+    color: #222831;
+    border-radius: 0 0 20px 20px;
+}
+
+button:hover {
+    background-color: #FFD36980;
+    color: #000;
+}
+
+
+.visor2 {
+    border: solid 1px purple;
+    height: 180px;
+    width: 180px;
+    font-size: 3rem;
+    color: #FFD369;
+    background-color: #222831;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+.visor2 div {
+    width: 20px;
+    height: 20px;
+    background-color: #FFD369;
+    border-radius: 50%;
+}
